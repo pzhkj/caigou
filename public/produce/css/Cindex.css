@@ -1,0 +1,96 @@
+.index_main {
+    padding: 0.1rem 0.1rem 0.56rem;
+}
+
+.procure_list {
+    width: 100%;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 0.26);
+    border-radius: 0.05rem;
+    margin-bottom: 0.05rem;
+}
+
+.procure_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.12rem;
+    color: #868686;
+    padding: 0.08rem 0.1rem 0.04rem;
+}
+
+.procure_bot {
+    display: flex;
+    padding: 0.08rem 0.1rem 0.11rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    border: 1px solid #F2F2F2;
+}
+
+.P_img {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.procure_num {
+    font-size: 0.12rem;
+    line-height: 0.22rem;
+}
+
+.procure_bot_mid {
+    font-size: 0.12rem;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    align-items: center;
+}
+
+.P_detail {
+    display: inline-block;
+    font-size: 0.12rem;
+    width: 0.34rem;
+    height: 0.2rem;
+    border: 1px solid rgba(191, 191, 191, 1);
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.2rem;
+    color: rgba(134, 134, 134, 1);
+}
+
+
+.not_procure {
+    width: 100%;
+    text-align: center;
+    font-size: 0.15rem;
+    color: rgba(134, 134, 134, 1);
+}
+
+.index_not {
+    width: 53%;
+    margin: 20% 0 10%;
+}
+
+.addProcure {
+    display: inline-block;
+    width: 55%;
+    height: 0.38rem;
+    text-align: center;
+    line-height: 0.36rem;
+    background: #4c8bcc;
+    border-radius: 5px;
+    font-size: 0.15rem;
+    color: #ffffff;
+    margin-top: 10%;
+}
+
+.add_img {
+    width: 0.45rem;
+    height: 0.45rem;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+}

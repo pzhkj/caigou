@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/CorderDetail.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="order">
+            <img class="order_img" :src="cOrderDetail.product_image | filterImg" alt="">
+            <div class="order_wrap">
+                <p>{{cOrderDetail.product_name}}</p>
+                <p>{{cOrderDetail.qty.toString().replace(/-/g, "")}}个</p>
+            </div>
+
+            <div class="order_time">
+                <ul class="uu_time">
+                    <li>
+                        <span>{{time}}</span>
+                        <span v-if="current==2">{{cOrderDetail.in_system_at}}</span>
+                        <span v-if="current==3">{{cOrderDetail.out_system_at}}</span>
+                    </li>
+                    <li>
+                        <span>{{title}}</span>
+                        <span v-if="current==2">{{cOrderDetail.remarks}}</span>
+                        <span v-if="current==3">{{cOrderDetail.order_sn}}</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="order_time">
+                <ul class="uu_time">
+                    <li>
+                        <span>出入库状态</span>
+                        <span>{{cOrderDetail.status == 1 ? '未入库' : cOrderDetail.status == 2 ?'已入库':'已出库'}}</span>
+                    </li>
+                    <li>
+                        <span>库存数量</span>
+                        <span>{{cOrderDetail.stock}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/api.js"></script>
+<script src="js/KorderDetail.js"></script>

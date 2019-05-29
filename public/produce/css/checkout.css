@@ -1,0 +1,42 @@
+.content_uu {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.content_uu li {
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.12rem 0 0.16rem;
+    border-bottom: 1px solid #F2F2F2;
+    line-height: 0.4rem;
+}
+
+.content_uu li span:nth-child(2) {
+    color: #868686;
+}
+
+.btn {
+    width: 70%;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    text-align: center;
+    background: rgba(76, 139, 204, 1);
+    border-radius: 0.05rem;
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    margin: 0.2rem auto 0;
+}
+
+.content_uu li input {
+    border: 0;
+    background: transparent;
+    outline: none;
+    line-height: 0.36rem;
+    text-align: right;
+}

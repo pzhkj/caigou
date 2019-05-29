@@ -1,0 +1,673 @@
+---------------------------------------------------------------
+[ 2019-05-18T16:15:57+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:15:58+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:05+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/account?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'account' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:06+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/account/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167365940
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_account` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:11+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'command' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:12+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371918
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:14+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:14+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/index?sort=weigh&order=desc&_=1558167374463
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:18+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/edit/ids/104?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` WHERE  `id` = 104 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:26+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/auth/rule/edit/ids/104?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` WHERE  `id` = 104 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cg_auth_rule` WHERE  `name` = 'purchase'  AND `id` <> 104 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `cg_auth_rule`  SET `pid`=0,`name`='purchase',`updatetime`=1558167386  WHERE  `id` = 104 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('权限管理 菜单规则 编辑' , '{\"dialog\":\"1\",\"row\":{\"ismenu\":\"1\",\"pid\":\"0\",\"name\":\"purchase\",\"title\":\"\\u91c7\\u8d2d\\u7ba1\\u7406\",\"icon\":\"fa fa-align-justify\",\"weigh\":\"200\",\"condition\":\"\",\"remark\":\"\",\"status\":\"normal\"},\"ids\":\"104\"}' , '/admin/auth/rule/edit/ids/104?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167386) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:26+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167386) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:26+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/index?sort=weigh&order=desc&_=1558167374465
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:27+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/index?sort=weigh&order=desc&_=1558167374464
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:29+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'purchase' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:29+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167389195
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:31+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/edit/ids/10?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_order` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` WHERE  (  1=1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:35+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22status%22%3A%223%22%7D&op=%7B%22status%22%3A%22%3D%22%7D&_=1558167389196
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '3' ) ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '3' ) ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:36+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22status%22%3A%222%22%7D&op=%7B%22status%22%3A%22%3D%22%7D&_=1558167389197
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '2' ) ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '2' ) ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:36+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22status%22%3A%221%22%7D&op=%7B%22status%22%3A%22%3D%22%7D&_=1558167389198
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '1' ) ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` WHERE  (  `purchase`.`status` = '1' ) ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:37+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167389199
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:39+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167389200
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:16:45+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/index?sort=weigh&order=desc&_=1558167374466
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:17:06+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371919
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:17:07+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/execute/ids/34
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('api' , '[\"--force=1\",\"--output=api_002.html\"]' , 'php think api --force=1 --output=api_002.html' , 1558167427 , 1558167427 , 1558167427) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `cg_command`  SET `status`='successed',`content`='Build Successed!',`updatetime`=1558167427  WHERE  `id` = 35 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('在线命令管理 运行' , '{\"ids\":\"34\"}' , '/admin/command/execute/ids/34' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167427) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:17:07+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371920
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:18:29+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/execute/ids/35
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('api' , '[\"--force=1\",\"--output=api_002.html\"]' , 'php think api --force=1 --output=api_002.html' , 1558167509 , 1558167509 , 1558167509) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `cg_command`  SET `status`='successed',`content`='Build Successed!',`updatetime`=1558167509  WHERE  `id` = 36 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('在线命令管理 运行' , '{\"ids\":\"35\"}' , '/admin/command/execute/ids/35' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167509) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:18:29+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371921
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:18:43+08:00 ] 127.0.0.1 GET www.caigou-local.com/api/purchase/getOrder
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_order` WHERE  `purchase_er` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:12+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/execute/ids/36
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.078004s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('api' , '[\"--force=1\",\"--output=api_002.html\"]' , 'php think api --force=1 --output=api_002.html' , 1558167612 , 1558167612 , 1558167612) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `cg_command`  SET `status`='successed',`content`='Build Successed!',`updatetime`=1558167612  WHERE  `id` = 37 [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('在线命令管理 运行' , '{\"ids\":\"36\"}' , '/admin/command/execute/ids/36' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167612) [ RunTime:0.011000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:12+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371922
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053003s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:34+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/execute/ids/37
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('api' , '[\"--force=1\",\"--output=api_002.html\"]' , 'php think api --force=1 --output=api_002.html' , 1558167634 , 1558167634 , 1558167634) [ RunTime:0.032002s ]
+[ sql ] [ SQL ] UPDATE `cg_command`  SET `status`='successed',`content`='Build Successed!',`updatetime`=1558167634  WHERE  `id` = 38 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('在线命令管理 运行' , '{\"ids\":\"37\"}' , '/admin/command/execute/ids/37' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167634) [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:34+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167371923
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:57+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (104) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:20:57+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (104) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:00+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (104) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:24+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:24+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:24+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'command' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:24+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684676
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:25+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'purchase' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:26+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167685907
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:21:26+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684677
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:23:43+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:23:43+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/index?sort=weigh&order=desc&_=1558167823292
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:23:51+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/auth/rule/edit/ids/104?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_auth_rule` WHERE  `id` = 104 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:29+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684678
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:30+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW TABLES [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:31+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.011001s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167871) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:53+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_order' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ sql ] [ SQL ] 'cg_order'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_order\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167893) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:56+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.011000s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167896) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:56+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167896) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:57+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.010000s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167897) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:24:57+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.011000s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167897) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:25:29+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/command/action/command
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"commandtype\":\"crud\",\"isrelation\":\"1\",\"local\":\"1\",\"delete\":\"0\",\"force\":\"0\",\"table\":\"cg_order\",\"controller\":\"\",\"model\":\"\",\"fields\":[\"product_name\",\"qty\",\"product_image\",\"order_sn\",\"create_at\",\"delivery_at\",\"status\"],\"relation\":{\"2\":{\"relation\":\"cg_account\",\"relationmode\":\"belongsto\",\"relationforeignkey\":\"purchase_er\",\"relationprimarykey\":\"id\",\"relationfields\":[\"nickname\"]}},\"setcheckboxsuffix\":\"\",\"enumradiosuffix\":\"\",\"imagefield\":\"\",\"filefield\":\"\",\"intdatesuffix\":\"\",\"switchsuffix\":\"\",\"citysuffix\":\"\",\"selectpagesuffix\":\"\",\"selectpagessuffix\":\"\",\"ignorefields\":\"\",\"sortfield\":\"\",\"editorsuffix\":\"\",\"headingfilterfield\":\"\",\"action\":\"command\"}' , '/admin/command/command/action/command' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167929) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:25:31+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/command/action/execute
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('crud' , '[\"--table=cg_order\",\"--fields=product_name,qty,product_image,order_sn,create_at,delivery_at,status\",\"--relation=cg_account\",\"--relationmode=belongsto\",\"--relationforeignkey=purchase_er\",\"--relationprimarykey=id\",\"--relationfields=nickname\"]' , 'php think crud --table=cg_order --fields=product_name,qty,product_image,order_sn,create_at,delivery_at,status --relation=cg_account --relationmode=belongsto --relationforeignkey=purchase_er --relationprimarykey=id --relationfields=nickname' , 1558167931 , 1558167931 , 1558167931) [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'cg_order' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'account' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'cg_account' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `cg_command`  SET `status`='failured',`content`='model already exists!\nIf you need to rebuild again, use the parameter --force=true',`updatetime`=1558167931  WHERE  `id` = 39 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"commandtype\":\"crud\",\"isrelation\":\"1\",\"local\":\"1\",\"delete\":\"0\",\"force\":\"0\",\"table\":\"cg_order\",\"controller\":\"\",\"model\":\"\",\"fields\":[\"product_name\",\"qty\",\"product_image\",\"order_sn\",\"create_at\",\"delivery_at\",\"status\"],\"relation\":{\"2\":{\"relation\":\"cg_account\",\"relationmode\":\"belongsto\",\"relationforeignkey\":\"purchase_er\",\"relationprimarykey\":\"id\",\"relationfields\":[\"nickname\"]}},\"setcheckboxsuffix\":\"\",\"enumradiosuffix\":\"\",\"imagefield\":\"\",\"filefield\":\"\",\"intdatesuffix\":\"\",\"switchsuffix\":\"\",\"citysuffix\":\"\",\"selectpagesuffix\":\"\",\"selectpagessuffix\":\"\",\"ignorefields\":\"\",\"sortfield\":\"\",\"editorsuffix\":\"\",\"headingfilterfield\":\"\",\"action\":\"execute\"}' , '/admin/command/command/action/execute' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167931) [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:25:31+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684679
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:25:32+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558167932) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:25:32+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684680
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:09+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167685908
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:12+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/edit/ids/10?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_order` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` WHERE  (  1=1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:16+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/purchase/edit/ids/1?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_order` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` WHERE  (  1=1 ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:54+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558167684681
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_command` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:56+08:00 ] 127.0.0.1 GET www.caigou-local.com/admin/command/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW TABLES [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-18T16:26:56+08:00 ] 127.0.0.1 POST www.caigou-local.com/admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'caigou' AND table_name = 'cg_account' ORDER BY ORDINAL_POSITION [ RunTime:0.012000s ]
+[ sql ] [ SQL ] 'cg_account'caigou'HOW COLUMNS FROM `cg_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"cg_account\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '127.0.0.1' , 1558168016) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:16:26+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+---------------------------------------------------------------
+[ 2019-05-18T18:16:34+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+---------------------------------------------------------------
+[ 2019-05-18T18:16:52+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+---------------------------------------------------------------
+[ 2019-05-18T18:17:29+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `cg_admin`  SET `logintime`=1558174649,`token`='b8152c7a-8567-47b6-b1a0-209711d9b1ec',`updatetime`=1558174649  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_admin_log` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `cg_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"46c4d87280a503cd3edf490d99306ead\",\"username\":\"admin\",\"captcha\":\"Mdxm\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' , '117.89.199.247' , 1558174649) [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:17:29+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:17:30+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/purchase?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `cg_auth_rule` WHERE  `name` = 'purchase' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:17:30+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558174656614
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:17:31+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/purchase/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1558174656615
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `purchase`.`id`,`purchase`.`purchase_er`,`purchase`.`product_name`,`purchase`.`qty`,`purchase`.`product_image`,`purchase`.`order_sn`,`purchase`.`create_at`,`purchase`.`delivery_at`,`purchase`.`status`,`purchase`.`remarks`,`purchase`.`in_system_at`,`purchase`.`product_sku`,`purchase`.`in_system_qty`,`purchase`.`in_system_account_id`,`purchase`.`out_system_at`,`purchase`.`out_system_qty`,`purchase`.`out_system_account_id`,account.id AS account__id,account.login_name AS account__login_name,account.login_password AS account__login_password,account.nickname AS account__nickname,account.phone AS account__phone,account.remarks AS account__remarks,account.type AS account__type FROM `cg_order` `purchase` LEFT JOIN `cg_account` `account` ON `purchase`.`purchase_er`=`account`.`id` ORDER BY `purchase`.`id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-18T18:17:33+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/purchase/edit/ids/3?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `cg_auth_group_access` `aga` LEFT JOIN `cg_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `cg_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_order` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` WHERE  (  1=1 ) [ RunTime:0.000000s ]

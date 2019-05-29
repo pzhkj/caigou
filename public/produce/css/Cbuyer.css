@@ -1,0 +1,95 @@
+.buyer {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.buyer_wrap {
+    padding: 0.16rem 0 0.13rem 0.22rem;
+    line-height: 0;
+}
+
+.buyer_img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.8rem 0 0.6rem 1rem;
+}
+
+.buyer_uu li {
+    font-size: 0.8rem;
+    border-top: 1px solid #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    line-height: 0.4rem;
+    color: #333333;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.box>input {
+    text-align: right;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #868686;
+}
+
+.next {
+    display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/xia.png)no-repeat;
+    background-size: 100% 100%;
+    line-height: 0.3rem;
+}
+
+.buyer_text {
+    font-size: 0.8rem;
+    color: #333333;
+    padding: 0.5rem;
+    border-top: 1px solid #EDEDED;
+}
+
+textarea {
+    width: 96%;
+    height: 5rem;
+    background: rgba(237, 237, 237, 1);
+    border-radius: 0.05rem;
+    margin-top: 0.08rem;
+    border: 0;
+    resize: none;
+    outline: none;
+    padding: 0.03rem 0.05rem;
+}
+
+.edit_btn {
+    width: 80%;
+    height: 1.8rem;
+    background: rgba(76, 139, 204, 1);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 1.8rem;
+    margin: 1rem auto;
+}
+
+#Svalue {
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/xia.png)no-repeat;
+    background-size: 100% 100%;
+    /* color: transparent; */
+}
+img.dropdown-icon {
+    width: 1.2rem;
+}
+.toolbar .picker-button{
+    color: rgba(76, 139, 204, 1);
+}

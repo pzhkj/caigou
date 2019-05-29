@@ -1,0 +1,837 @@
+---------------------------------------------------------------
+[ 2019-05-29T15:36:21+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/favicon.ico
+[运行时间：0.046875s] [吞吐率：21.33req/s] [内存消耗：280.51kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/login-purchase.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T15:38:01+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：263.23kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\phpStudy\WWW\caigou\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T15:38:04+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：280.42kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/index.php/admin',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\phpStudy\WWW\caigou\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\caigou\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T15:38:04+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php?s=/captcha
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：160.85kb] [文件加载：106]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\phpStudy\WWW\caigou\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T15:38:04+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php/admin/ajax/lang?callback=define&controllername=index&v=1559115484
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：279.59kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1559115484',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpStudy\WWW\caigou\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T15:38:40+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/login/login
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：392.77kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/login-purchase.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '18539110576',
+  'login_password' => '123456',
+  'login_type' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ RUN ] app\api\controller\Login->login[ E:\phpStudy\WWW\caigou\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_account` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `cg_account` WHERE  `phone` = 18539110576  AND `type` = '1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_user_token` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `cg_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('eaeac19499e176c741752bcbd7f0f2c82cbcd275' , 4 , 1559115520 , 1561707520) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T15:38:40+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrder
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：357.74kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/Cindex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrder[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` WHERE  (  purchase_er = 1 and status = '1' ) ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:00:24+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrder
+[运行时间：0.078125s] [吞吐率：12.80req/s] [内存消耗：563.20kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015625s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/Cindex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrder[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` WHERE  (  purchase_er = 1 and status = '1' ) ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:00:34+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrderInfo
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：345.34kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrderInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/CorderDetail.html?id=50',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '54',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '50',
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrderInfo[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks`,`in_system_at`,`out_system_at` FROM `cg_order` WHERE  `id` = 50 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT sum(qty) nums FROM `cg_order` WHERE  `product_name` = 'iPad 2' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:02:41+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/favicon.ico
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：138.95kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=i22oec07ecs4emsrhaeui4h9v3',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/login-stock.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; MI 6 Build/OPR1.170623.027; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044704 Mobile Safari/537.36 MMWEBID/1067 MicroMessenger/7.0.4.1420(0x2700043B) Process/tools NetType/WIFI Language/zh_CN',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T16:05:37+08:00 ] 49.94.39.206 GET caigou.pzhkj.cn/favicon.ico
+[运行时间：0.000000s] [吞吐率：∞req/s] [内存消耗：137.82kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=r42ke7rsiilvqb7ihrrm70s7t2',
+  'accept-language' => 'zh-CN,zh-CN;q=0.9,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/login-purchase.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LYA-AL00 Build/HUAWEILYA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044704 Mobile Safari/537.36 MMWEBID/6798 MicroMessenger/7.0.4.1420(0x2700043B) Process/tools NetType/4G Language/zh_CN',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T16:17:17+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrder
+[运行时间：0.078125s] [吞吐率：12.80req/s] [内存消耗：563.20kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/Cindex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrder[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` WHERE  (  purchase_er = 1 and status = '1' ) ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:17:30+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrderInfo
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：345.34kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrderInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/CorderDetail.html?id=6',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '53',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '6',
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrderInfo[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks`,`in_system_at`,`out_system_at` FROM `cg_order` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT sum(qty) nums FROM `cg_order` WHERE  `product_name` = '麻花' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:17:36+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrder
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：356.74kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/Cindex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrder[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` WHERE  (  purchase_er = 1 and status = '1' ) ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:17:36+08:00 ] 117.89.199.247 POST caigou.pzhkj.cn/api/purchase/getOrder
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：356.74kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'purchase',
+    2 => 'getOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/produce/Cindex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://caigou.pzhkj.cn',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '19825142-c39a-4052-9f8e-14fbe8178045',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\api\controller\Purchase->getOrder[ E:\phpStudy\WWW\caigou\application\api\controller\Purchase.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=caigou;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cg_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`product_name`,`qty`,`product_image`,`order_sn`,`create_at`,`delivery_at`,`status`,`remarks` FROM `cg_order` WHERE  (  purchase_er = 1 and status = '1' ) ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-05-29T16:24:48+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/
+[运行时间：0.078125s] [吞吐率：12.80req/s] [内存消耗：403.61kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\caigou\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\caigou\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T16:24:52+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/admin/index/login.html
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：303.11kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873,1559118287; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1559118287',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\phpStudy\WWW\caigou\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\caigou\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T16:24:52+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/index.php?s=/captcha
+[运行时间：0.000000s] [吞吐率：∞req/s] [内存消耗：247.29kb] [文件加载：108]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873,1559118287; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1559118287',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\phpStudy\WWW\caigou\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-29T16:24:53+08:00 ] 117.89.199.247 GET caigou.pzhkj.cn/admin/ajax/lang?callback=define&controllername=index&v=1559118292
+[运行时间：0.015625s] [吞吐率：64.00req/s] [内存消耗：301.15kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6791155712; __zlcmid=mthPfQz5HiSaIV; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22%24device_id%22%3A%2216420488340289-07ee76d6205fbc-2d604637-250125-16420488342423%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s6829409280; PHPSESSID=lnr8pf4nt0k087d2mb5uicut66; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1558333873,1559118287; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1559118287',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://caigou.pzhkj.cn/admin/index/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'caigou.pzhkj.cn',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1559118292',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpStudy\WWW\caigou\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpStudy\WWW\caigou\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File

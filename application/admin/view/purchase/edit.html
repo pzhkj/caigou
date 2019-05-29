@@ -1,0 +1,147 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Purchase_er')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-purchase_er" data-rule="required" class="form-control selectpicker" name="row[purchase_er]">
+                <option value="0">请选择</option>
+                {foreach name="accounts" item="vo"}
+                {if $vo.type == 1}
+                <option value="{$vo.id}" {in name="$vo.id" value="$row.purchase_er"}selected{/in}>{$vo.nickname}</option>
+                {/if}
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Product_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-product_name" data-rule="required" class="form-control" name="row[product_name]" type="text" value="{$row.product_name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Qty')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qty" data-rule="required" class="form-control" name="row[qty]" type="number" value="{$row.qty|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Product_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-product_image" data-rule="" class="form-product_image" size="50" name="row[product_image]" type="text" value="{$row.product_image}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-Product_image" class="btn btn-danger plupload" data-input-id="c-product_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-product_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-Product_image" class="btn btn-primary fachoose" data-input-id="c-product_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-product_image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-product_image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_sn" class="form-control" name="row[order_sn]" type="text" value="{$row.order_sn|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Create_at')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_at" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_at]" type="text" value="{$row.create_at}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Delivery_at')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-delivery_at" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[delivery_at]" type="text" value="{$row.delivery_at}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="$row.status"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Remarks')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remarks" class="form-control" name="row[remarks]" type="text" value="{$row.remarks|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('In_system_at')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-in_system_at" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[in_system_at]" type="text" value="{$row.in_system_at}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Product_sku')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-product_sku" class="form-control" name="row[product_sku]" type="text" value="{$row.product_sku|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('In_system_qty')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-in_system_qty" class="form-control" name="row[in_system_qty]" type="number" value="{$row.in_system_qty|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('In_system_account_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-in_system_account_id" class="form-control selectpicker" name="row[in_system_account_id]">
+                <option value="0">请选择</option>
+                {foreach name="accounts" item="vo"}
+                {if $vo.type == 2}
+                <option value="{$vo.id}"  {in name="$vo.id" value="$row.in_system_account_id"}selected{/in}>{$vo.nickname}</option>
+                {/if}
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Out_system_at')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-out_system_at" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[out_system_at]" type="text" value="{$row.out_system_at}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Out_system_qty')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-out_system_qty" class="form-control" name="row[out_system_qty]" type="number" value="{$row.out_system_qty|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Out_system_account_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-out_system_account_id" class="form-control selectpicker" name="row[out_system_account_id]">
+                <option value="0">请选择</option>
+                {foreach name="accounts" item="vo"}
+                {if $vo.type == 3}
+                <option value="{$vo.id}" {in name="$vo.id" value="$row.out_system_account_id"}selected{/in}>{$vo.nickname}</option>
+                {/if}
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

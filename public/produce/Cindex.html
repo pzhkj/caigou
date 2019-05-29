@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/Cindex.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="index_main">
+            <div class="procure_list" v-for="(item,index) in procureList">
+                <div class="procure_top">
+                    <span>送货时间</span>
+                    <span>{{item.delivery_at}}</span>
+                </div>
+                <hr>
+                <div class="procure_bot">
+                    <div class="procure_bot_mid">
+                        <img class="P_img" :src="item.product_image | filterImg" alt="">
+                        <div class="procure_num">
+                            <p>名称：{{item.product_name}}</p>
+                            <p>数量：{{item.qty}}个</p>
+                        </div>
+                    </div>
+                    <span class="P_detail" @click="produceDetail(item.id)">详情</span>
+                </div>
+            </div>
+
+            <img class="add_img" @click="addProduce" src="img/添加.png" alt="" v-if="procureList!=''">
+        </div>
+
+
+        <!-- 没有订单 -->
+        <div class="not_procure" v-if="procureList==''">
+            <img class="index_not" src="img/not.png" alt="">
+            <p>还没有任何订单哦</p>
+            <span class="addProcure" @click="addProduce">添加订单</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/api.js"></script>
+<script src="js/Cindex.js"></script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/edit.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="buyer">
+            <div class="buyer_wrap">
+                <img class="buyer_img" :src="avter==''?'img/upload.png':avter" alt="">
+            </div>
+            <ul class="buyer_uu">
+                <li>
+                    <span>产品名称</span>
+                    <div class="box">
+                        <span>请输入产品名称</span>
+                        <img class="next" src="img/xia.png" alt="">
+                    </div>
+
+                </li>
+                <li>
+                    <span>产品数量</span>
+                    <div class="box">
+                        <span>请输入产品数量</span>
+                        <img class="next" src="img/xia.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <span>送货时间</span>
+                    <div class="box">
+                        <span>请输入产品数量</span>
+                        <img class="next" src="img/xia.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="buyer_text">
+                <p>备注</p>
+                <textarea placeholder="请输入备注" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="edit_stuts">
+            <ul class="edit_uu">
+                <li>
+                    <span>出入库状态</span>
+                    <span>入库</span>
+                </li>
+                <li>
+                    <span>数量</span>
+                    <span>222</span>
+                </li>
+            </ul>
+        </div>
+
+        <button class="edit_btn">确定</button>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/edit.js"></script>

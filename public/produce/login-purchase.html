@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- 
+        采购端登录页
+     -->
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="login">
+            <div class="login_wrap">
+                <h4>登录</h4>
+                <ul class="login_uu">
+                    <li>
+                        <input @input="limitLength('phone',11)" v-model="phone" maxlength="11" type="number" placeholder="输入手机号">
+                    </li>
+                    <li>
+                        <input v-model="password" type="password" placeholder="输入密码">
+                        <!-- <span class="forget" @click="forget">忘记密码</span> -->
+                    </li>
+                </ul>
+
+                <p class="login_btn" @click="enter(1)">登录</p>
+                <!-- <p class="login_btn" @click="register">注册</p> -->
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>

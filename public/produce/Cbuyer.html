@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>采购订单</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/Cbuyer.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="buyer">
+            <div class="buyer_wrap">
+                <img class="buyer_img" @click="uploadEvent" :src="avter==''?'img/upload.png':avter" alt="">
+                <input type="file" @change="uploadImg($event)" id="order-img" hidden>
+            </div>
+            <ul class="buyer_uu">
+                <li>
+                    <span>产品名称</span>
+                    <div class="box">
+                        <input type="text" v-model="title" placeholder="请输入产品名称" id="hh">
+                        <img src="img/xia.png" class="dropdown-icon" id="title-select">
+                    </div>
+
+                </li>
+                <li>
+                    <span>产品数量</span>
+                    <div class="box">
+                        <input v-model="number" type="number" placeholder="请输入产品数量" id="">
+                    </div>
+                </li>
+                <li>
+                    <span>送货时间</span>
+                    <div class="box">
+                        <input v-model="deliveryTime" type="text" readonly placeholder="请选择送货时间" id="date-picker">
+                    </div>
+                </li>
+            </ul>
+            <div class="buyer_text">
+                <p>备注</p>
+                <textarea placeholder="请输入备注" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div @click="addOrder" class="edit_btn">确定</div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/weui.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/jquery.combo.select.js"></script>
+<script src="js/Cbuyer.js"></script>

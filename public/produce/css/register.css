@@ -1,0 +1,61 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+
+.login_wrap {
+    text-align: center;
+}
+
+.login {
+    padding: 0.26rem 0.18rem 0;
+    line-height: 0;
+}
+
+h4 {
+    font-size: 0.24rem;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 1);
+    text-align: left;
+}
+
+.login_uu li {
+    width: 100%;
+    height: 0.6rem;
+    font-size: 0.14rem;
+    color: rgba(134, 134, 134, 1);
+    border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login_uu li input {
+    width: 70%;
+    height: 50%;
+    outline: none;
+    border: 0;
+    align-self: flex-end;
+}
+
+.forget {
+    line-height: 0.32rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.login_btn {
+    width: 82%;
+    height: 0.36rem;
+    background: rgba(76, 139, 204, 1);
+    border-radius: 0.18rem;
+    font-size: 0.14rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.36rem;
+    text-align: center;
+    margin: 0.24rem auto 0;
+}
