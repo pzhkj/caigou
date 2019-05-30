@@ -95,6 +95,7 @@ class Auth
         }
         // 获取用户需要验证的所有有效规则列表
         $rulelist = $this->getRuleList($uid);
+
         if (in_array('*', $rulelist)) {
             return true;
         }
@@ -111,9 +112,11 @@ class Auth
         if ('url' == $mode) {
             $REQUEST = unserialize(strtolower(serialize($this->request->param())));
         }
+        
         foreach ($rulelist as $rule) {
             $query = preg_replace('/^.+\?/U', '', $rule);
             if ('url' == $mode && $query != $rule) {
+
                 parse_str($query, $param); //解析规则中的param
                 $intersect = array_intersect_assoc($REQUEST, $param);
                 $rule = preg_replace('/\?.*$/U', '', $rule);

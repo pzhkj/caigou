@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"E:\phpStudy\WWW\caigou\public/../application/admin\view\index\login.html";i:1557482264;s:62:"E:\phpStudy\WWW\caigou\application\admin\view\common\meta.html";i:1557482264;s:64:"E:\phpStudy\WWW\caigou\application\admin\view\common\script.html";i:1557482264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"E:\phpStudy\WWW\caigou\public/../application/admin\view\index\login.html";i:1559138523;s:62:"E:\phpStudy\WWW\caigou\application\admin\view\common\meta.html";i:1557482264;s:64:"E:\phpStudy\WWW\caigou\application\admin\view\common\script.html";i:1557482264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <!-- FastAdmin是开源程序，建议在您的网站底部保留一个FastAdmin的链接 -->
-                    <p class="copyright"><a href="https://www.fastadmin.net">Powered By FastAdmin</a></p>
+                    <p class="copyright"><a href="#">南京破折号软件科技有限公司提供</a></p>
                 </div>
             </div>
         </div>

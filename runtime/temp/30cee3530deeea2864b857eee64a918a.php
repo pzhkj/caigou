@@ -1,12 +1,31 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:84:"F:\PhpStudy\PHPTutorial\WWW\caigou\public/../application/admin\view\index\login.html";i:1559138523;s:74:"F:\PhpStudy\PHPTutorial\WWW\caigou\application\admin\view\common\meta.html";i:1557482264;s:76:"F:\PhpStudy\PHPTutorial\WWW\caigou\application\admin\view\common\script.html";i:1557482264;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {include file="common/meta" /}
+        <meta charset="utf-8">
+<title><?php echo (isset($title) && ($title !== '')?$title:''); ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<!-- Loading Bootstrap -->
+<link href="/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config:  <?php echo json_encode($config); ?>
+    };
+</script>
 
         <style type="text/css">
             body {
                 color:#999;
-                background:url('{$background}');
+                background:url('<?php echo $background; ?>');
                 background-size:cover;
             }
             a {
@@ -61,38 +80,38 @@
                 <div class="login-screen">
                     <div class="well">
                         <div class="login-form">
-                            <img id="profile-img" class="profile-img-card" src="__CDN__/assets/img/avatar.png" />
+                            <img id="profile-img" class="profile-img-card" src="/assets/img/avatar.png" />
                             <p id="profile-name" class="profile-name-card"></p>
 
                             <form action="" method="post" id="login-form">
                                 <div id="errtips" class="hide"></div>
-                                {:token()}
+                                <?php echo token(); ?>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-                                    <input type="text" class="form-control" id="pd-form-username" placeholder="{:__('Username')}" name="username" autocomplete="off" value="" data-rule="{:__('Username')}:required;username" />
+                                    <input type="text" class="form-control" id="pd-form-username" placeholder="<?php echo __('Username'); ?>" name="username" autocomplete="off" value="" data-rule="<?php echo __('Username'); ?>:required;username" />
                                 </div>
 
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
-                                    <input type="password" class="form-control" id="pd-form-password" placeholder="{:__('Password')}" name="password" autocomplete="off" value="" data-rule="{:__('Password')}:required;password" />
+                                    <input type="password" class="form-control" id="pd-form-password" placeholder="<?php echo __('Password'); ?>" name="password" autocomplete="off" value="" data-rule="<?php echo __('Password'); ?>:required;password" />
                                 </div>
-                                {if $config.fastadmin.login_captcha}
+                                <?php if($config['fastadmin']['login_captcha']): ?>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
-                                    <input type="text" name="captcha" class="form-control" placeholder="{:__('Captcha')}" data-rule="{:__('Captcha')}:required;length(4)" />
+                                    <input type="text" name="captcha" class="form-control" placeholder="<?php echo __('Captcha'); ?>" data-rule="<?php echo __('Captcha'); ?>:required;length(4)" />
                                     <span class="input-group-addon" style="padding:0;border:none;cursor:pointer;">
-                                        <img src="{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha" width="100" height="30" onclick="this.src = '{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha&r=' + Math.random();"/>
+                                        <img src="<?php echo rtrim('/', '/'); ?>/index.php?s=/captcha" width="100" height="30" onclick="this.src = '<?php echo rtrim('/', '/'); ?>/index.php?s=/captcha&r=' + Math.random();"/>
                                     </span>
                                 </div>
-                                {/if}
+                                <?php endif; ?>
                                 <div class="form-group">
                                     <label class="inline" for="keeplogin">
                                         <input type="checkbox" name="keeplogin" id="keeplogin" value="1" />
-                                        {:__('Keep login')}
+                                        <?php echo __('Keep login'); ?>
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success btn-lg btn-block">{:__('Sign in')}</button>
+                                    <button type="submit" class="btn btn-success btn-lg btn-block"><?php echo __('Sign in'); ?></button>
                                 </div>
                             </form>
                         </div>
@@ -102,6 +121,6 @@
                 </div>
             </div>
         </div>
-        {include file="common/script" /}
+        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
     </body>
 </html>
